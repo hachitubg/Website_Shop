@@ -62,7 +62,7 @@ INSERT INTO Products (CategoryID, ProductName, Description, Price, Quantity) VAL
     (2, 'KONG LINGHUI', 'CỐT VỢT NGANG', 1800000, 40),
     (3, 'Áo Xiom F1 T12/2018 M3', 'Áo Xiom F1 T12/2018 M3 Đẹp', 160000, 40),
     (3, 'Quần Mizuno F1 T11/2018 M1', 'Áo Xiom F1 T12/2018 M3 Đẹp', 120000, 40),
-    (3, 'Áo XIOM T1/2018 M12', 'Áo XIOM T1/2018 M12Áo XIOM T1/2018 M12', 650000, 10),;
+    (3, 'Áo XIOM T1/2018 M12', 'Áo XIOM T1/2018 M12Áo XIOM T1/2018 M12', 650000, 10);
 
 INSERT INTO ProductImages (ProductID, ImageURL) VALUES
     (1, 'https://hunghabongban.com.vn/images/products/20428498_1537096596355224_870738819_n.jpg'),
