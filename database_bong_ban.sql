@@ -45,7 +45,8 @@ CREATE TABLE Orders (
     ProductID INT,
     Quantity INT,
     TotalAmount DECIMAL(10, 2),
-    PaymentStatus VARCHAR(50) DEFAULT 'Thành công'
+    PaymentStatus VARCHAR(50) DEFAULT 'Thành công',
+    OrderDate DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 INSERT INTO Categories (CategoryName) VALUES
