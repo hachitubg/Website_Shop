@@ -38,8 +38,8 @@ if (mysqli_num_rows($cartResult) > 0) {
     while ($cartItem = mysqli_fetch_assoc($cartResult)) {
         $productName = $cartItem['ProductName'];
         $quantity = $cartItem['Quantity'];
-        $price = $cartItem['Price'];
-        $totalPrice = $quantity * $price;
+        $price = number_format($cartItem['Price'], 0, ',', '.');
+        $totalPrice = number_format($quantity * $price, 0, ',', '.');
 
         // Check if 'ShoppingCartID' key is present in the $cartItem array
         $cartId = isset($cartItem['ShoppingCartID']) ? $cartItem['ShoppingCartID'] : '';

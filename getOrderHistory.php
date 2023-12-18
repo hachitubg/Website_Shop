@@ -39,7 +39,7 @@ if (mysqli_num_rows($orderResult) > 0) {
         $orderDate = $order['OrderDate'];
         $productName = $order['ProductName'];
         $quantity = $order['Quantity'];
-        $totalAmount = $order['TotalAmount'];
+        $totalAmount = number_format($order['TotalAmount'], 0, ',', '.');
         $paymentStatus = $order['PaymentStatus'];
 
         $orderHistoryHTML .= "<tr>
